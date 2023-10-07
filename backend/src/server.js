@@ -1,5 +1,6 @@
-import express from 'express';
-import { chats } from './chats_data/data'; // Note the .mjs extension
+const express = require('express');
+const { chats } = require('./chats_data/data');
+
 
 const app = express();
 

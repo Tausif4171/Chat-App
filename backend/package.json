@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.ts"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
   },
-  "author": "Tausif Khan",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
