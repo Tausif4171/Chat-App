@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 .App {
-    background-color: white;
-    color: black;
-  }
-  
-  .App.dark {
-    background-color: black;
-    color: white;
-  }
+  background-color: white;
+  color: black;
+}
+
+.App.dark {
+  background-color: black;
+  color: white;
+}
