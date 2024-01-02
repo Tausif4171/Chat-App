@@ -7,7 +7,7 @@ function HomePage() {
             <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'start' }}>
                 <Container maxW='2xl' bg='#F0F0F8' centerContent>
                     <Box padding='4' color='black' maxW='md'>
-                        <Text fontSize='32px' fontWeight={600}>Talkative</Text>
+                        <Text fontSize='32px' fontWeight={600} fontFamily={'Work sans'}>Talkative</Text>
                     </Box>
 
                     <FormControl isRequired mb={'24px'}>
