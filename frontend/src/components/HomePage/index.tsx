@@ -17,49 +17,49 @@ function HomePage() {
                         </TabList>
                         <TabPanels>
                             <TabPanel>
-                                <div>
-                                    <FormControl isRequired mb={'24px'}>
-                                        <Box mb={'24px'}>
-                                            <FormLabel>Username</FormLabel>
-                                            <Input placeholder='First name' bg={'white'} focusBorderColor='none' outline={'none'} />
-                                        </Box>
 
-                                        <Box mb={'24px'}>
-                                            <FormLabel>Password</FormLabel>
-                                            <Input placeholder='First name' bg={'white'} />
-                                        </Box>
+                                <FormControl isRequired mb={'24px'}>
+                                    <Box mb={'24px'}>
+                                        <FormLabel>Username</FormLabel>
+                                        <Input placeholder='First name' bg={'white'} focusBorderColor='none' outline={'none'} />
+                                    </Box>
 
-                                        <Box mb={'24px'}>
-                                            <Button bg='black' width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'}>Button</Button>
-                                        </Box>
-                                    </FormControl>
-                                </div>
+                                    <Box mb={'24px'}>
+                                        <FormLabel>Password</FormLabel>
+                                        <Input placeholder='First name' bg={'white'} />
+                                    </Box>
+
+                                    <Box mb={'24px'}>
+                                        <Button bg='black' width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'}>Button</Button>
+                                    </Box>
+                                </FormControl>
+
                             </TabPanel>
                             <TabPanel>
-                                <div>
-                                    <FormControl isRequired mb={'24px'}>
-                                        <Box mb={'24px'}>
-                                            <FormLabel>Username</FormLabel>
-                                            <Input placeholder='First name' bg={'white'} focusBorderColor='none' outline={'none'} />
-                                        </Box>
 
-                                        <Box mb={'24px'}>
-                                            <FormLabel>Password</FormLabel>
-                                            <Input placeholder='First name' bg={'white'} />
-                                        </Box>
+                                <FormControl isRequired mb={'24px'}>
+                                    <Box mb={'24px'}>
+                                        <FormLabel>Username</FormLabel>
+                                        <Input placeholder='First name' bg={'white'} focusBorderColor='none' outline={'none'} />
+                                    </Box>
 
-                                        <Box mb={'24px'}>
-                                            <Button bg='black' width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'}>Button</Button>
-                                        </Box>
-                                    </FormControl>
-                                </div>
+                                    <Box mb={'24px'}>
+                                        <FormLabel>Password</FormLabel>
+                                        <Input placeholder='First name' bg={'white'} />
+                                    </Box>
+
+                                    <Box mb={'24px'}>
+                                        <Button bg='black' width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'}>Button</Button>
+                                    </Box>
+                                </FormControl>
+
                             </TabPanel>
                         </TabPanels>
                     </Tabs>
 
 
                 </Container>
-            </div>
+            </div >
         </>
     )
 }
