@@ -57,6 +57,11 @@ function HomePage() {
                                     </Box>
 
                                     <Box mb={'12px'}>
+                                        <FormLabel>Upload your picture</FormLabel>
+                                        <Input type='file' p='4px' bg={'white'} />
+                                    </Box>
+
+                                    <Box mb={'12px'}>
                                         <Button bg='black' width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'}>Sign Up</Button>
                                     </Box>
                                 </FormControl>
