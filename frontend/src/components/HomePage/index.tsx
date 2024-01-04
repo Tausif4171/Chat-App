@@ -11,12 +11,12 @@ function HomePage() {
                     </Box>
 
                     <Tabs variant='soft-rounded' colorScheme='green'>
-                        <TabList>
+                        <TabList display={'flex'} justifyContent={'center'} >
                             <Tab>Login</Tab>
                             <Tab>Sing Up</Tab>
                         </TabList>
                         <TabPanels>
-                            <TabPanel>
+                            <TabPanel width={'500px'}>
 
                                 <FormControl isRequired mb={'24px'}>
                                     <Box mb={'12px'}>
@@ -35,7 +35,7 @@ function HomePage() {
                                 </FormControl>
 
                             </TabPanel>
-                            <TabPanel>
+                            <TabPanel width={'500px'}>
 
                                 <FormControl isRequired mb={'24px'}>
                                     <Box mb={'12px'}>
