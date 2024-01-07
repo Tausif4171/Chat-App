@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import { Box, Button, VStack, Container, FormControl, FormLabel, Input, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
+import { Box, Button, VStack, Container, FormControl, FormLabel, Input, Tab, TabList, TabPanel, TabPanels, Tabs, Text, InputGroup, InputRightElement } from '@chakra-ui/react'
 
 function Login() {
-    const [name, setName] = useState('')
+
     const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [isShow, setIsShow] = useState(false)
 
     const handleLogin = () => { }
     return (
@@ -11,12 +13,15 @@ function Login() {
             <FormControl isRequired mb={'24px'}>
                 <Box mb={'12px'}>
                     <FormLabel>Email Address</FormLabel>
-                    <Input placeholder='Enter email' bg={'white'} focusBorderColor='none' outline={'none'} onChange={(e) => setEmail(e.target.value)} />
+                    <Input placeholder='Enter email ' bg={'white'} focusBorderColor='none' outline={'none'} onChange={(e) => setEmail(e.target.value)} />
                 </Box>
 
                 <Box mb={'12px'}>
                     <FormLabel>Password</FormLabel>
-                    <Input type='password' placeholder='Enter password' bg={'white'} onChange={(e) => setName(e.target.value)} />
+                    <InputGroup>
+                        <Input placeholder='Enter password' type={isShow ? 'text' : 'password'} bg={'white'} onChange={(e) => setPassword(e.target.value)} />
+                        <InputRightElement paddingRight={'24px'} cursor={'pointer'} onClick={() => setIsShow(!isShow)}>{isShow ? 'Hide' : 'Show'}</InputRightElement>
+                    </InputGroup>
                 </Box>
             </FormControl>
 

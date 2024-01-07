@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
-import { Box, Button, Container, FormControl, FormLabel, HStack, Input, Tab, TabList, TabPanel, TabPanels, Tabs, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Container, FormControl, FormLabel, HStack, Input, InputGroup, InputRightElement, Tab, TabList, TabPanel, TabPanels, Tabs, Text, VStack } from '@chakra-ui/react'
 
 function SignUp() {
+    const [showPassword, setShowPassword] = useState(false)
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -24,11 +27,18 @@ function SignUp() {
 
                 <Box mb={'12px'}>
                     <FormLabel>Password</FormLabel>
-                    <Input placeholder='Enter password' bg={'white'} onChange={(e) => setPassword(e.target.value)} />
+                    <InputGroup>
+                        <Input placeholder='Enter password' type={showPassword ? 'text' : 'password'} bg={'white'} onChange={(e) => setPassword(e.target.value)} />
+                        <InputRightElement paddingRight={'24px'} cursor={'pointer'} onClick={() => setShowPassword(!showPassword)}>{showPassword ? 'Hide' : 'Show'}</InputRightElement>
+                    </InputGroup>
+
                 </Box>
                 <Box mb={'12px'}>
                     <FormLabel>Confirm Password</FormLabel>
-                    <Input placeholder='Enter confirm password' bg={'white'} onChange={(e) => setConfirmPassword(e.target.value)} />
+                    <InputGroup>
+                        <Input placeholder='Enter confirm password' type={showConfirmPassword ? 'text' : 'password'} bg={'white'} onChange={(e) => setConfirmPassword(e.target.value)} />
+                        <InputRightElement paddingRight={'24px'} cursor={'pointer'} onClick={() => setShowConfirmPassword(!showConfirmPassword)}>{showConfirmPassword ? 'Hide' : 'Show'}</InputRightElement>
+                    </InputGroup>
                 </Box>
 
                 <Box mb={'12px'}>
