@@ -18,17 +18,41 @@ function SignUp() {
             <FormControl isRequired mb={'24px'}>
                 <Box mb={'12px'}>
                     <FormLabel>Name</FormLabel>
-                    <Input placeholder='Enter name' bg={'white'} focusBorderColor='none' outline={'none'} onChange={(e) => setName(e.target.value)} />
+                    <Input placeholder='Enter name' bg='white'
+                        borderWidth='2px'
+                        borderColor='white'
+                        _hover={{ borderColor: 'black' }}
+                        _focus={{
+                            borderColor: 'black',
+                            boxShadow: 'none',  // Add this to remove any box shadow on focus
+                            outline: 'none !important',
+                        }} onChange={(e) => setName(e.target.value)} />
                 </Box>
                 <Box mb={'12px'}>
                     <FormLabel>Email</FormLabel>
-                    <Input placeholder='Enter email' bg={'white'} focusBorderColor='none' outline={'none'} onChange={(e) => setEmail(e.target.value)} />
+                    <Input placeholder='Enter email' bg='white'
+                        borderWidth='2px'
+                        borderColor='white'
+                        _hover={{ borderColor: 'black' }}
+                        _focus={{
+                            borderColor: 'black',
+                            boxShadow: 'none',  // Add this to remove any box shadow on focus
+                            outline: 'none !important',
+                        }} focusBorderColor='none' outline={'none'} onChange={(e) => setEmail(e.target.value)} />
                 </Box>
 
                 <Box mb={'12px'}>
                     <FormLabel>Password</FormLabel>
                     <InputGroup>
-                        <Input placeholder='Enter password' type={showPassword ? 'text' : 'password'} bg={'white'} onChange={(e) => setPassword(e.target.value)} />
+                        <Input placeholder='Enter password' type={showPassword ? 'text' : 'password'} bg='white'
+                            borderWidth='2px'
+                            borderColor='white'
+                            _hover={{ borderColor: 'black' }}
+                            _focus={{
+                                borderColor: 'black',
+                                boxShadow: 'none',  // Add this to remove any box shadow on focus
+                                outline: 'none !important',
+                            }} onChange={(e) => setPassword(e.target.value)} />
                         <InputRightElement paddingRight={'24px'} cursor={'pointer'} onClick={() => setShowPassword(!showPassword)}>{showPassword ? 'Hide' : 'Show'}</InputRightElement>
                     </InputGroup>
 
@@ -36,20 +60,36 @@ function SignUp() {
                 <Box mb={'12px'}>
                     <FormLabel>Confirm Password</FormLabel>
                     <InputGroup>
-                        <Input placeholder='Enter confirm password' type={showConfirmPassword ? 'text' : 'password'} bg={'white'} onChange={(e) => setConfirmPassword(e.target.value)} />
+                        <Input placeholder='Enter confirm password' type={showConfirmPassword ? 'text' : 'password'} bg='white'
+                            borderWidth='2px'
+                            borderColor='white'
+                            _hover={{ borderColor: 'black' }}
+                            _focus={{
+                                borderColor: 'black',
+                                boxShadow: 'none',  // Add this to remove any box shadow on focus
+                                outline: 'none !important',
+                            }} onChange={(e) => setConfirmPassword(e.target.value)} />
                         <InputRightElement paddingRight={'24px'} cursor={'pointer'} onClick={() => setShowConfirmPassword(!showConfirmPassword)}>{showConfirmPassword ? 'Hide' : 'Show'}</InputRightElement>
                     </InputGroup>
                 </Box>
 
                 <Box mb={'12px'}>
                     <FormLabel>Upload your picture</FormLabel>
-                    <Input type='file' p='4px' bg={'white'} onChange={(e: any) => handleProfilePic(e.target.files[0])} />
+                    <Input type='file' p='4px' bg='white'
+                        borderWidth='2px'
+                        borderColor='white'
+                        _hover={{ borderColor: 'black' }}
+                        _focus={{
+                            borderColor: 'black',
+                            boxShadow: 'none',  // Add this to remove any box shadow on focus
+                            outline: 'none !important',
+                        }} onChange={(e: any) => handleProfilePic(e.target.files[0])} />
                 </Box>
 
             </FormControl>
             <div>
                 <Box mb={'12px'}>
-                    <Button bg='black' width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'} onClick={handleSignUp}>Sign Up</Button>
+                    <Button bg='black' _hover={{ background: "white", color: 'black' }} width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'} onClick={handleSignUp}>Sign Up</Button>
                 </Box>
             </div>
         </VStack>

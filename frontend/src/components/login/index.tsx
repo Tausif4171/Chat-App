@@ -17,10 +17,10 @@ function Login() {
                         placeholder='Enter email'
                         bg='white'
                         borderWidth='2px'
-                        borderColor='red'
-                        _hover={{ borderColor: 'red' }}
+                        borderColor='white'
+                        _hover={{ borderColor: 'black' }}
                         _focus={{
-                            borderColor: 'yellow',
+                            borderColor: 'black',
                             boxShadow: 'none',  // Add this to remove any box shadow on focus
                             outline: 'none !important',
                         }}
@@ -32,7 +32,15 @@ function Login() {
                 <Box mb={'12px'}>
                     <FormLabel>Password</FormLabel>
                     <InputGroup>
-                        <Input placeholder='Enter password' type={isShow ? 'text' : 'password'} bg={'white'} onChange={(e) => setPassword(e.target.value)} />
+                        <Input placeholder='Enter password' type={isShow ? 'text' : 'password'} bg='white'
+                            borderWidth='2px'
+                            borderColor='white'
+                            _hover={{ borderColor: 'black' }}
+                            _focus={{
+                                borderColor: 'black',
+                                boxShadow: 'none',  // Add this to remove any box shadow on focus
+                                outline: 'none !important',
+                            }} onChange={(e) => setPassword(e.target.value)} />
                         <InputRightElement paddingRight={'24px'} cursor={'pointer'} onClick={() => setIsShow(!isShow)}>{isShow ? 'Hide' : 'Show'}</InputRightElement>
                     </InputGroup>
                 </Box>
