@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Button, VStack, Container, FormControl, FormLabel, Input, Tab, TabList, TabPanel, TabPanels, Tabs, Text, InputGroup, InputRightElement } from '@chakra-ui/react'
+import { Box, Button, VStack, Container, FormControl, FormLabel, Input, Tab, TabList, TabPanel, TabPanels, Tabs, Text, InputGroup, InputRightElement, background } from '@chakra-ui/react'
 
 function Login() {
 
@@ -39,9 +39,9 @@ function Login() {
             </FormControl>
 
             <Box mb={'24px'}>
-                <Button bg='black' width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'} onClick={handleLogin}>Login</Button>
+                <Button bg='black' _hover={{ background: "white", color: 'black' }} width={'107px'} height={'44px'} textAlign={'center'} lineHeight={'20px'} rounded={'12px'} textColor={'white'} onClick={handleLogin}>Login</Button>
             </Box>
-        </VStack>
+        </VStack >
     )
 }
 
