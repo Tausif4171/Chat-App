@@ -13,7 +13,20 @@ function Login() {
             <FormControl isRequired mb={'24px'}>
                 <Box mb={'12px'}>
                     <FormLabel>Email Address</FormLabel>
-                    <Input placeholder='Enter email ' bg={'white'} focusBorderColor='none' outline={'none'} onChange={(e) => setEmail(e.target.value)} />
+                    <Input
+                        placeholder='Enter email'
+                        bg='white'
+                        borderWidth='2px'
+                        borderColor='red'
+                        _hover={{ borderColor: 'red' }}
+                        _focus={{
+                            borderColor: 'yellow',
+                            boxShadow: 'none',  // Add this to remove any box shadow on focus
+                            outline: 'none !important',
+                        }}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+
                 </Box>
 
                 <Box mb={'12px'}>
